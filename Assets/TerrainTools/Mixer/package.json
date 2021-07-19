@@ -1,0 +1,12 @@
+{
+  "name": "com.rowlan.terraintools.mixer",
+  "displayName": "Terrain Tools Mixer",
+  "version": "0.9.1",
+  "unity": "2021.1",
+  "description": "Modification of Unity's Terrain Tools to support painting e. g. texture and height of a path in a single stroke.",
+  "keywords": [
+    "Editor Tools"
+  ],
+  "category": "Scripts",
+  "type": "tool"
+}
