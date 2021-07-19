@@ -2,7 +2,7 @@
  
 Mixer for Unity's Terrain Tools 3 is a free and Open Source extension for the Unity Terrain Tools version 3. You can stack and order the provided tools via drag & drop and change the size and opacity of the brushes quickly. During painting the tool stack is painted one after the other.
 
-That way you can create an arbitrary order and use the tool as a road painter, path painter, river and lake bed painter, mountain andvances ans so on.
+That way you can create an arbitrary order and use the tool as a road painter, path painter, river and lake bed painter, mountain andvances and so on.
 
 This is an update to its predecessor [Path Paint Tool](https://github.com/Roland09/PathPaintTool) which supports now Unity 2021+. The name got changed to "Mixer" because it'll become more over time with Unity's addition of more Terrain Tools like Terrace, Thermal and Hydraulic Erosion, Twist and even with their awesome filters for Noise.
  
