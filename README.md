@@ -15,7 +15,7 @@ Let's see in a video how it looks like in action, please click on the picture to
 
 # Installation
 
-In Unity 2021.1 open package manager and install via git url:
+In Unity 2020+ or 2021+ open package manager and install via git url:
 
 	https://github.com/Roland09/TerrainTools3Mixer.git?path=/Assets/TerrainTools/Mixer
 	
