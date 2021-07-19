@@ -19,7 +19,7 @@ In Unity 2020+ or 2021+ open package manager and install via git url:
 
 	https://github.com/Roland09/TerrainTools3Mixer.git?path=/Assets/TerrainTools/Mixer
 	
-Additionally you can download this free unity package with a Demo Terrain and Textures (see credits) to get you started:
+Additionally you can download this free unity package with a Demo Terrain and Textures (see credits) which includes a demo scene to get you started:
 
 	https://bit.ly/DemoTerrain
 
