@@ -61,9 +61,43 @@ To the right of the Terrain Tool name is the slider for the brush size and to th
 
 For Vegetation Studio Pro I recommend to use the include and exclude terrain texture rules for automatic vegetation placement.
 
+## More Feature Visuals
+
+Multi-Tile Terrain Road &ath Painting
+
+![multi-tile-with-vspro](https://user-images.githubusercontent.com/10963432/126135199-3c0f4bd6-dc68-4e25-a810-3ddf4c4194bd.gif)
+
+![pathpainttool-motocross-track](https://user-images.githubusercontent.com/10963432/126135118-c5797f67-8560-42aa-9b75-e4bd6e52d894.gif)
+
+![motocross-track](https://user-images.githubusercontent.com/10963432/126135185-805c6772-605e-4c2e-85ca-e70685ed80d5.jpg)
+
+Vegetation Studio Pro Integration
+
+![vspro](https://user-images.githubusercontent.com/10963432/126135149-318667ca-b8cc-42e6-89bb-96654b227f9f.gif)
+
+![golf](https://user-images.githubusercontent.com/10963432/126135162-bf6e0904-c5d4-4e07-8bf2-11ccbe21a585.gif)
+
+Mountain Advancement
+
+![mountain-advance](https://user-images.githubusercontent.com/10963432/126135191-83827068-6d1d-46ee-bfd2-306adee4fd44.gif)
+
+Resize / Rotate via keyboard shortcuts
+
+![resize-rotate](https://user-images.githubusercontent.com/10963432/126135133-93467a19-f891-4a4b-9a11-75a1829002b1.gif)
+
+Undo over Multi-Tile Terrain
+
+![undo tiles](https://user-images.githubusercontent.com/10963432/126135147-c3203421-97a3-465b-97fd-14db42dee83a.gif)
+
+Underlay Paint for e. g. River Beds
+
+![underlay-paint](https://user-images.githubusercontent.com/10963432/126135140-3c0c3fbf-a534-43a6-96fa-2586da46f307.gif)
+
+
+
 ## Notes
 
-The demo unitypackage is provided to get you started with a tiled and textured terrain. Future updates will be done on the code alone.
+The demo unitypackage is provided to get you started with a tiled and textured terrain.
 
 ## Credits
 
