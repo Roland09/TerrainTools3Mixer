@@ -70,9 +70,21 @@ Example:
 
 For Vegetation Studio Pro I recommend to use the include and exclude terrain texture rules for automatic vegetation placement.
 
-## More Feature Visuals
+## The Idea
 
-Multi-Tile Terrain Road &ath Painting
+Unity created and provided various tools for terrain manipulation for free. When I studied them I figured that it would make sense to combine them. So I tried and implemented a quick tool which combines varions Terrain Tools in 1 paint stroke. 
+
+So the basic idea is this:  
+  
+Have multiple brushes overlapping, e. g.:
+  
+* inner brush: texture tool  
+* middle brush: path tool  
+* outer brush: smooth tool  
+
+Examples:
+
+Multi-Tile Terrain Road & Path Painting
 
 ![multi-tile-with-vspro](https://user-images.githubusercontent.com/10963432/126135199-3c0f4bd6-dc68-4e25-a810-3ddf4c4194bd.gif)
 
