@@ -2,13 +2,13 @@
  
 Mixer for Unity's Terrain Tools 3 is a free and Open Source extension for the Unity Terrain Tools version 3. You can stack and order the provided tools via drag & drop and change the size and opacity of the brushes quickly. During painting the tool stack is painted one after the other.
 
-That way you can create a stack and use the tool as a road painter, path painter, river and lake bed painter, mountain andvances ans so on.
+That way you can create an arbitrary order and use the tool as a road painter, path painter, river and lake bed painter, mountain andvances ans so on.
 
-This is an update to the predecessor Path Paint Tool which supports now Unity 2021. The name got changed to "Mixer" because it'll become more over time with Unity's addition of more Terrain Tools like Twist and filters like Noise.
+This is an update to its predecessor [Path Paint Tool](https://github.com/Roland09/PathPaintTool) which supports now Unity 2021+. The name got changed to "Mixer" because it'll become more over time with Unity's addition of more Terrain Tools like Terrace, Thermal and Hydraulic Erosion, Twist and even with their awesome filters for Noise.
  
 ## Introduction
 
-Let's see in a video how it looks like in action, please click on the picture to see the video on youtube. In the example I use the Mixer for creating a bike path from scratch
+Let's see in a video how it looks like in action, please click on the picture to see the video on youtube. In the example I use the Mixer for creating a path from scratch for a bike driving scene:
 
 [![Terrain Tools 3 Mixer Example](https://img.youtube.com/vi/lzw_TlfGHaE/0.jpg)](https://www.youtube.com/watch?v=lzw_TlfGHaE)
 
@@ -19,7 +19,7 @@ In Unity 2020+ or 2021+ open package manager and install via git url:
 
 	https://github.com/Roland09/TerrainTools3Mixer.git?path=/Assets/TerrainTools/Mixer
 	
-Additionally you can download this free unity package with a Demo Terrain and Textures (see credits) which includes a demo scene to get you started:
+Additionally you can download this free unity package which includes a Demo Terrain with Textures (see credits) in order to get you started quickly:
 
 	https://bit.ly/DemoTerrain
 
@@ -34,8 +34,8 @@ For older Unity versions I recommend [Path Paint Tool](https://github.com/Roland
 
 The code was adapted to work with Unity 2020+ and 2021+. 
 
-The UI has become more compact. The individual Terrain Tools are quickly accessible and the Brush Size and Opacity can be quickly compared and changed: 
-To the right of the Terrain Tool name is the slider for the brush size and to the right of that is the slider for the brush opacity, i. e. strength.
+The UI has become more compact. The individual Terrain Tools are quickly accessible and the Brush Size and Opacity can be quickly compared and changed.
+To the right of the Terrain Tool Name is the slider for the brush size and next to it is the slider for the brush opacity, i. e. strength. Those values are relative to the overall Brush Size and Strength.
 
 Example:
 
@@ -51,10 +51,10 @@ Example:
  - Various Paint Modes
  
    * Paint Brush: Paint by dragging the mouse
-   * Stroke: Create strokes by placing an anchor point and subsequently create strokes from the previous anchor point.
+   * Stroke: Create strokes by placing an anchor point and subsequently create strokes from the previous anchor points.
    * Automatic Waypoint creation and Spline manipulation are in development and will be implemented as soon as Unity releases their Spline Package
    
-- Create roads, paths, plateaus, ramps, lake and river beds, mountain spurs
+- Create roads, paths, plateaus, ramps, lake and river beds, mountain spurs, ...
    
 - Multi Tile Terrain
 
@@ -72,11 +72,9 @@ For Vegetation Studio Pro I recommend to use the include and exclude terrain tex
 
 ## The Idea
 
-Unity created and provided various tools for terrain manipulation for free. When I studied them I figured that it would make sense to combine them. So I tried and implemented a quick tool which combines varions Terrain Tools in 1 paint stroke. 
+Unity created and provided various tools for terrain manipulation for free. When I studied them I figured that it would make sense to combine them. So I tried and implemented a quick tool which combines various Terrain Tools in 1 paint stroke. 
 
-So the basic idea is this:  
-  
-Have multiple brushes overlapping, e. g.:
+So the basic idea is to have multiple brushes overlapping, e. g.:
   
 * inner brush: texture tool  
 * middle brush: path tool  
