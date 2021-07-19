@@ -86,6 +86,10 @@ Vegetation Studio Pro Integration
 
 ![golf](https://user-images.githubusercontent.com/10963432/126135162-bf6e0904-c5d4-4e07-8bf2-11ccbe21a585.gif)
 
+Video (click to see it in action on youtube)
+
+[![Terrain Tools 3 Mixer Example](https://img.youtube.com/vi/K_XxgpzNZxc/0.jpg)](https://www.youtube.com/watch?v=K_XxgpzNZxc)
+
 Mountain Advancement
 
 ![mountain-advance](https://user-images.githubusercontent.com/10963432/126135191-83827068-6d1d-46ee-bfd2-306adee4fd44.gif)
