@@ -33,6 +33,11 @@ The code was adapted to work with Unity 2020+ and 2021+.
 The UI has become more compact. The individual Terrain Tools are quickly accessible and the Brush Size and Opacity can be quickly compared and changed: 
 To the right of the Terrain Tool name is the slider for the brush size and to the right of that is the slider for the brush opacity, i. e. strength.
 
+Example:
+
+![mixer-ui](https://user-images.githubusercontent.com/10963432/126138546-553bec24-f4d2-4763-9a2a-7bbd3ba08afd.gif)
+
+
 ## Features
 
 - Supported  Terrain Tools:
