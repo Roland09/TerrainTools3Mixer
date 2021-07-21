@@ -82,12 +82,12 @@ namespace Rowlan.TerrainTools.Mixer
 
         override public void PaintSegments(StrokeSegment[] segments, IOnPaint editContext, BrushSettings brushSettings)
         {
+            // initially there are no prevUV, but it's required for the smudge => we skip the first application of the brush
+            if (Event.current.type == EventType.MouseDown)
+                return;
+
             for (int i = 0; i < segments.Length; i++)
             {
-                // first item doesn't have prevUV
-                if (i == 0)
-                    continue;
-
                 StrokeSegment segment = segments[i];
 
                 Smudge(segment.currTerrain, editContext, segment.currUV, segment.prevUV, brushSettings);
