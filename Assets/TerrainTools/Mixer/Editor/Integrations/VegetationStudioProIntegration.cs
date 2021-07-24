@@ -25,8 +25,20 @@ namespace Rowlan.TerrainTools.Mixer
 
             Enabled = true;
 
+            // register undo handler
+            Undo.undoRedoPerformed += UndoCallback;
 #endif
         }
+
+#if VEGETATION_STUDIO_PRO
+        /// <summary>
+        /// Refresh the vegetation in case of an Undo
+        /// </summary>
+        void UndoCallback()
+        {
+            OnPaintFinished();
+        }
+#endif
 
         public override string GetName()
         {
