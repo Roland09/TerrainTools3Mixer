@@ -36,7 +36,7 @@ namespace Rowlan.TerrainTools.Mixer
         /// </summary>
         void UndoCallback()
         {
-            OnPaintFinished();
+            RefreshVegetation();
         }
 #endif
 
