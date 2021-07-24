@@ -55,14 +55,14 @@ namespace Rowlan.TerrainTools.Mixer
 
             // add modules: order in the inspector
             // initialize the modules
-            //                                       active,  brush size, brush strength, sceneGuiOrder, paintSegmentOrder
-            pathModule = new PathModule(               true,        100f,           100f,             3,                 1);
-            smoothModule = new SmoothModule(           true,        150f,            20f,             1,                 2);
-            paintModule = new PaintModule(             true,         80f,           100f,             7,                 7);
-            smudgeModule = new SmudgeModule(          false,        150f,            20f,             2,                 3);
-            ridgeErodeModule = new RidgeErodeModule(  false,        150f,            16f,             5,                 5);
-            heightModule = new HeightModule(          false,        100f,            20f,             4,                 4);
-            underlayModule = new UnderlayModule(      false,        140f,           100f,             6,                 6);
+            //                                       type                    ,   active,  brush size, brush strength, sceneGuiOrder, paintSegmentOrder
+            pathModule = new PathModule(             ModuleEditor.Type.Sculpt,     true,        100f,           100f,             3,                 1);
+            smoothModule = new SmoothModule(         ModuleEditor.Type.Sculpt,     true,        150f,            20f,             1,                 2);
+            paintModule = new PaintModule(           ModuleEditor.Type.Paint,      true,         80f,           100f,             7,                 7);
+            smudgeModule = new SmudgeModule(         ModuleEditor.Type.Sculpt,    false,        150f,            20f,             2,                 3);
+            ridgeErodeModule = new RidgeErodeModule( ModuleEditor.Type.Sculpt,    false,        150f,            16f,             5,                 5);
+            heightModule = new HeightModule(         ModuleEditor.Type.Sculpt,    false,        100f,            20f,             4,                 4);
+            underlayModule = new UnderlayModule(     ModuleEditor.Type.Underlay,  false,        140f,           100f,             6,                 6);
 
         }
 
@@ -83,7 +83,6 @@ namespace Rowlan.TerrainTools.Mixer
             modulesRegistry.modules.Add(underlayModule);
 
             UpdateModulesOrder();
-
         }
 
         public void ApplyRegistry( ModulesRegistry modulesRegistry)
@@ -117,11 +116,33 @@ namespace Rowlan.TerrainTools.Mixer
         public SerializedObject ModulesSerializedObject { get { return modulesSerializedObject; } }
         public SerializedProperty ModulesSerializedProperty { get { return modulesSerializedProperty; } }
         public ModulesRegistry ModulesRegistry {  get { return modulesRegistry; } }
-        public PaintModule PaintModule { get { return paintModule as PaintModule; } }
-        public UnderlayModule UnderlayModule { get { return underlayModule as UnderlayModule; } }
 
         public List<ModuleEditor> SceneGuiOrderList {  get { return onSceneGuiOrderList; } }
         public List<ModuleEditor> PaintSegmentOrderList {  get { return paintSegmentOrderList; } }
 
+        /// <summary>
+        /// Delayed actions is required if paint and underlay are both active
+        /// </summary>
+        /// <returns></returns>
+        public bool UseDelayedActions()
+        {
+            bool paintActive = false;
+            bool underlayActive = false;
+
+            foreach( ModuleEditor me in modulesRegistry.modules)
+            {
+                if (me.type == ModuleEditor.Type.Paint && me.active)
+                    paintActive = true;
+
+                if (me.type == ModuleEditor.Type.Underlay && me.active)
+                    underlayActive = true;
+
+                if (paintActive && underlayActive)
+                    return true;
+            }
+
+            return false;
+            
+        }
     }
 }

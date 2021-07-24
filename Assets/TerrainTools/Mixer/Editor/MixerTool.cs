@@ -634,7 +634,7 @@ namespace Rowlan.TerrainTools.Mixer
                 // skip paintmodule if delayed actions is active, it has to be painted over all other modules
                 if (UseDelayedActions())
                 {
-                    if (module == modulesManager.PaintModule)
+                    if (module.type == ModuleEditor.Type.Paint)
                         continue;
                 }
 
@@ -659,7 +659,7 @@ namespace Rowlan.TerrainTools.Mixer
 
         private bool UseDelayedActions()
         {
-            return modulesManager.PaintModule.active && modulesManager.UnderlayModule.active;
+            return modulesManager.UseDelayedActions();
 
         }
 
@@ -680,7 +680,7 @@ namespace Rowlan.TerrainTools.Mixer
                         continue;
 
                     // apply paintmodule if delayed actions are active, it has to be painted over all other modules
-                    if (module == parent.modulesManager.PaintModule)
+                    if (module.type == ModuleEditor.Type.Paint)
                     {
                         module.PaintSegments(actionContext.segments, actionContext.editContext, actionContext.brushSettings);
                     }

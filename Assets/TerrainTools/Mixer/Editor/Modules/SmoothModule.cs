@@ -26,7 +26,7 @@ namespace Rowlan.TerrainTools.Mixer
 
         private static Color smoothBrushColor = new Color(0.5f, 0.5f, 0.5f, 0.8f);
 
-        public SmoothModule(bool active, float brushSize, float brushStrength, int sceneGuiOrder, int paintSegmentOrder) : base(active, brushSize, brushStrength, sceneGuiOrder, paintSegmentOrder)
+        public SmoothModule(Type type, bool active, float brushSize, float brushStrength, int sceneGuiOrder, int paintSegmentOrder) : base(type, active, brushSize, brushStrength, sceneGuiOrder, paintSegmentOrder)
         {
         }
 

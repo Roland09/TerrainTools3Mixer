@@ -18,6 +18,17 @@ namespace Rowlan.TerrainTools.Mixer
     [Serializable]
     public abstract class ModuleEditor
     {
+        public enum Type
+        {
+            Sculpt,
+            Paint,
+            Underlay
+        }
+
+        [HideInInspector]
+        [SerializeField]
+        public Type type;
+
         [SerializeField]
         public string name = "<ModuleEditor.name>";
 
@@ -41,8 +52,9 @@ namespace Rowlan.TerrainTools.Mixer
         [SerializeField]
         public int paintSegmentOrder;
 
-        public ModuleEditor(bool active, float brushSize, float brushStrength, int sceneGuiOrder, int paintSegmentOrder)
+        public ModuleEditor( Type type, bool active, float brushSize, float brushStrength, int sceneGuiOrder, int paintSegmentOrder)
         {
+            this.type = type;
             this.name = GetName();
             this.description = GetDescription();
 
@@ -65,5 +77,6 @@ namespace Rowlan.TerrainTools.Mixer
         public abstract void OnSceneGUI(Terrain currentTerrain, IOnSceneGUI editContext, BrushSettings brushSettings);
 
         public abstract void PaintSegments(StrokeSegment[] segments, IOnPaint editContext, BrushSettings brushSettings);
+
     }
 }

@@ -32,7 +32,7 @@ namespace Rowlan.TerrainTools.Mixer
 
         private static Color smudgeBrushColor = new Color(0.5f, 0.7f, 0.5f, 0.8f);
 
-        public SmudgeModule(bool active, float brushSize, float brushStrength, int sceneGuiOrder, int paintSegmentOrder) : base(active, brushSize, brushStrength, sceneGuiOrder, paintSegmentOrder)
+        public SmudgeModule(Type type, bool active, float brushSize, float brushStrength, int sceneGuiOrder, int paintSegmentOrder) : base(type, active, brushSize, brushStrength, sceneGuiOrder, paintSegmentOrder)
         {
         }
 

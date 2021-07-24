@@ -29,7 +29,7 @@ namespace Rowlan.TerrainTools.Mixer
 
         private static Color paintBrushColor = new Color(1, 1, 0, 0.5f);
 
-        public PaintModule(bool active, float brushSize, float brushStrength, int sceneGuiOrder, int paintSegmentOrder) : base(active, brushSize, brushStrength, sceneGuiOrder, paintSegmentOrder)
+        public PaintModule(Type type, bool active, float brushSize, float brushStrength, int sceneGuiOrder, int paintSegmentOrder) : base(type, active, brushSize, brushStrength, sceneGuiOrder, paintSegmentOrder)
         {
         }
 

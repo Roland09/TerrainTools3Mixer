@@ -22,7 +22,7 @@ namespace Rowlan.TerrainTools.Mixer
 
         private static Color heightBrushColor = new Color(1.0f, 1.0f, 0.4f, 0.3f);
 
-        public HeightModule(bool active, float brushSize, float brushStrength, int sceneGuiOrder, int paintSegmentOrder) : base(active, brushSize, brushStrength, sceneGuiOrder, paintSegmentOrder)
+        public HeightModule(Type type, bool active, float brushSize, float brushStrength, int sceneGuiOrder, int paintSegmentOrder) : base(type, active, brushSize, brushStrength, sceneGuiOrder, paintSegmentOrder)
         {
         }
 

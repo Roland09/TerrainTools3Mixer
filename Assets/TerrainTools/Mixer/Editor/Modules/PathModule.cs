@@ -40,7 +40,7 @@ namespace Rowlan.TerrainTools.Mixer
 
         private static Color pathBrushColor = new Color(0.6f, 0.6f, 1.0f, 0.7f);
 
-        public PathModule(bool active, float brushSize, float brushStrength, int sceneGuiOrder, int paintSegmentOrder) : base(active, brushSize, brushStrength, sceneGuiOrder, paintSegmentOrder)
+        public PathModule(Type type, bool active, float brushSize, float brushStrength, int sceneGuiOrder, int paintSegmentOrder) : base(type, active, brushSize, brushStrength, sceneGuiOrder, paintSegmentOrder)
         {
         }
 
